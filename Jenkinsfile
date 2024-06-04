@@ -2,6 +2,7 @@ pipeline {
     agent any 
     environment {
         S3_BUCKET = 'phsinghka.dev'
+        CLOUDFRONT_DISTRIBUTION_ID = "E25FBF8MG5KDU6"
     }
     stages {
         stage('New Changes'){
@@ -25,9 +26,12 @@ pipeline {
                 }
             }
         }
-        stage('Invalidate Cloudfront Cache'){
-            steps{
-                sh'echo "cloudfornt code goes here. and here"'
+        stage('Invalidate CloudFront Cache') {
+            steps {
+                script {
+                    def awsCli = sh(script: 'which aws', returnStdout: true).trim()
+                    sh "${awsCli} cloudfront create-invalidation --distribution-id ${CLOUDFRONT_DISTRIBUTION_ID} --paths '/*'"
+                }
             }
         }
     }
