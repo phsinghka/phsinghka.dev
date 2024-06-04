@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Invalidate Cloudfront Cache'){
             steps{
-                sh'echo "cloudfornt code goes here."'
+                sh'echo "cloudfornt code goes here. and here"'
             }
         }
     }
