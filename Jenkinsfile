@@ -10,19 +10,11 @@ pipeline {
                 sh 'echo "Lets Deploy it"'
             }
         }
-        stage('Delete files in S3') {
-            steps {
-                script {
-                    def awsCli = sh(script: 'which aws', returnStdout: true).trim()
-                    sh "${awsCli} s3 rm s3://${S3_BUCKET} --recursive"
-                }
-            }
-        }
         stage('Deploy To S3'){
             steps {
                 script {
                     def awsCli = sh(script: 'which aws', returnStdout: true).trim()
-                    sh "${awsCli} s3 sync . s3://${S3_BUCKET}"
+                    sh "${awsCli} s3 sync . s3://${S3_BUCKET} --delete"
                 }
             }
         }
