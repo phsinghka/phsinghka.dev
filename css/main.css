@@ -1019,6 +1019,9 @@ h2 i[class^="icon-"], h2 i[class*=" icon-"], h2 i.fa {
 		.social li a.github:before {
  			content: '\e805'
 			}
+		.social li a.home:before {
+			content: '\e8e3'
+			}
 		.social li a.wordpress:before {
  			content: '\e816'
 			}
@@ -1123,6 +1126,9 @@ h2 i[class^="icon-"], h2 i[class*=" icon-"], h2 i.fa {
 			}
 		.social li a.github:hover {
  			background-color: #222
+			}
+		.social li a.home:hover {
+			background-color: #2A55B9
 			}
 		.social li a.wordpress:hover {
  			background-color: #0083b3

@@ -5,7 +5,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Experienced DevOps Engineer | Cloud Architecture | CI/CD Specialist | Driving Innovation" />
+    <meta name="description"
+        content="Experienced DevOps Engineer | Cloud Architecture | CI/CD Specialist | Driving Innovation" />
     <meta name="keywords" content="vcard, html5, portfolio" />
     <meta name="author" content="Pixelwars" />
 
@@ -59,19 +60,23 @@
     <div class="container" id="container">
         <!-- HEADER -->
         <header class="header">
-            <img src="images/site/avatar.png" alt="avatar" />
-            <h1>Piyush Himmatsinghka</h1>
+            <a href="/"><img src="images/site/avatar.png" alt="avatar" /></a>
+            <a href="/"><h1 style="color: black;">Piyush Himmatsinghka</h1></a>
             <p>DevOps Engineer</p>
             <div class="download-button">
                 <a href="/Piyush_DevOps Engineer_Resume.pdf" class="button primary" target="_blank">DOWNLOAD CV</a>
             </div>
 
             <ul class="social">
+
                 <li>
                     <a class="github" href="https://github.com/phsinghka" target="_blank"></a>
                 </li>
                 <li>
                     <a class="linkedin" href="https://www.linkedin.com/in/phsinghka/" target="_blank"></a>
+                </li>
+                <li>
+                    <a class="home" href="/"></a>
                 </li>
                 <li>
                     <a class="instagram" href="https://www.instagram.com/phsinghka" target="_blank"></a>
@@ -85,7 +90,7 @@
                 <li><a href="#/about">about me</a></li>
                 <li><a href="#/portfolio">portfolio</a></li>
                 <li><a href="#/contact">contact</a></li>
-                <li><a href="#/blog">blog</a></li>
+                <!-- <li><a href="#/blog">blog</a></li> -->
                 <li><a href="#/resume">resume</a></li>
             </ul>
             <!-- NAV MENU -->
@@ -336,6 +341,22 @@
                                 </a>
                             </div>
                         </div>
+                        <!-- NGINX -->
+                        <div class="col-xs-6 col-sm-4 col-md-2">
+                            <div class="client">
+                                <a href="#" title="NGINX">
+                                    <img src="images/tech-logo/nginx.png" alt="NGINX" />
+                                </a>
+                            </div>
+                        </div>
+                        <!-- APACHE -->
+                        <div class="col-xs-6 col-sm-4 col-md-2">
+                            <div class="client">
+                                <a href="#" title="APACHE">
+                                    <img src="images/tech-logo/apache.png" alt="APACHE" />
+                                </a>
+                            </div>
+                        </div>
                         <!-- GIT -->
                         <div class="col-xs-6 col-sm-4 col-md-2">
                             <div class="client">
@@ -466,8 +487,8 @@
                         </div>
                     </div>
 
-                    
-                    
+
+
                 </div>
             </section>
             <!-- PAGE : ABOUT -->
@@ -480,18 +501,18 @@
                     </h2>
 
                     <!--FILTERS-->
-                    <ul id="filters" class="filters">
+                    <!-- <ul id="filters" class="filters">
                         <li class="current"><a href="#" data-filter="*">ALL</a></li>
                         <li><a href="#" data-filter=".design">CLOUD</a></li>
                         <li><a href="#" data-filter=".coding">CI/CD PIPELINES</a></li>
                         <li><a href="#" data-filter=".logo">DOCKER</a></li>
                         <li><a href="#" data-filter=".logo">KUBERNETES</a></li>
-                    </ul>
+                    </ul> -->
                     <!--FILTERS-->
 
                     <!-- PORTFOLIO -->
                     <div class="portfolio-items media-grid" data-layout="masonry">
-                        <!-- portfolio-item -->
+                        <!-- LAMP STACK -->
                         <div class="media-cell design hentry">
                             <div class="media-box">
                                 <img src="images/portfolio/lamp-stack-website/01.png" alt="portfolio-post" />
@@ -504,167 +525,22 @@
                                 <p class="category">AWS Cloud</p>
                             </div>
                         </div>
-                        <!-- portfolio-item -->
+                        <!-- LAMP STACK -->
 
-                        <!-- portfolio-item -->
+                        <!-- LEMP STACK -->
                         <div class="media-cell coding hentry">
                             <div class="media-box">
                                 <img src="images/portfolio/02.png" alt="portfolio-post" />
                                 <div class="mask"></div>
-                                <a href="portfolio-item-02.html" class="ajax"></a>
+                                <a href="portfolio-lemp-stack-website.html" class="ajax"></a>
                             </div>
 
                             <div class="media-cell-desc">
-                                <h3>On The Desert</h3>
-                                <p class="category">an illustration work</p>
+                                <h3>LEMP Stack Website</h3>
+                                <p class="category">AWS Cloud</p>
                             </div>
                         </div>
-                        <!-- portfolio-item -->
-
-                        <!-- portfolio-item - lightbox video -->
-                        <div class="media-cell coding video hentry">
-                            <div class="media-box">
-                                <img src="images/portfolio/03.png" alt="portfolio-post" />
-                                <div class="mask"></div>
-                                <!-- lightbox - video -->
-                                <a href="http://player.vimeo.com/video/79380715?title=0&amp;byline=0&amp;portrait=0&amp;color=009966"
-                                    title="Paper by FiftyThree" data-lightbox-gallery="fancybox-item-03"
-                                    class="lightbox iframe"></a>
-                                <!-- lightbox - video -->
-                            </div>
-
-                            <div class="media-cell-desc">
-                                <h3>Sleepy Games</h3>
-                                <p class="category">lightbox video</p>
-                            </div>
-                        </div>
-                        <!-- portfolio-item - lightbox video -->
-
-                        <!-- portfolio-item - lightbox image -->
-                        <div class="media-cell design image hentry">
-                            <div class="media-box">
-                                <img src="images/portfolio/04.png" alt="portfolio-post" />
-                                <div class="mask"></div>
-                                <!-- lightbox - image -->
-                                <a href="images/portfolio/lightbox-01.jpg" title="an illustration by Vasili Tkach"
-                                    data-lightbox-gallery="fancybox-item-01" class="lightbox"></a>
-                                <!-- lightbox - image -->
-                            </div>
-                            <div class="media-cell-desc">
-                                <h3>World War X</h3>
-                                <p class="category">ligthbox image</p>
-                            </div>
-                        </div>
-                        <!-- portfolio-item - lightbox image -->
-
-                        <!-- portfolio-item - lightbox soundcloud -->
-                        <div class="media-cell coding audio hentry">
-                            <div class="media-box">
-                                <img src="images/portfolio/06.png" alt="portfolio-post" />
-                                <div class="mask"></div>
-                                <!-- lightbox - soundcloud -->
-                                <a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/129829419&amp;color=009966&amp;auto_play=false&amp;show_artwork=true"
-                                    title="Soundcloud embed" data-lightbox-gallery="fancybox-item-04"
-                                    class="lightbox iframe"></a>
-                                <!-- lightbox - soundcloud -->
-                            </div>
-                            <div class="media-cell-desc">
-                                <h3>Empty Battery</h3>
-                                <p class="category">lightbox soundcloud</p>
-                            </div>
-                        </div>
-                        <!-- portfolio-item - lightbox soundcloud -->
-
-                        <!-- portfolio-item - lightbox gallery -->
-                        <div class="media-cell logo image hentry">
-                            <div class="media-box">
-                                <img src="images/portfolio/07.png" alt="portfolio-post" />
-                                <div class="mask"></div>
-                                <!-- lightbox - gallery -->
-                                <a href="images/portfolio/lightbox-02.jpg" data-lightbox-gallery="fancybox-item-02"
-                                    class="lightbox" title="Octopus is dangerous!"></a>
-                                <a href="images/portfolio/lightbox-03.jpg" data-lightbox-gallery="fancybox-item-02"
-                                    class="hidden lightbox"></a>
-                                <a href="images/portfolio/lightbox-04.jpg" data-lightbox-gallery="fancybox-item-02"
-                                    class="hidden lightbox" title="Dog have dreams"></a>
-                                <!-- lightbox - gallery -->
-                            </div>
-                            <div class="media-cell-desc">
-                                <h3>Wizard Adventure</h3>
-                                <p class="category">lightbox gallery</p>
-                            </div>
-                        </div>
-                        <!-- portfolio-item - lightbox gallery -->
-
-                        <!-- portfolio-item - custom url -->
-                        <div class="media-cell logo url hentry">
-                            <div class="media-box">
-                                <img src="images/portfolio/08.png" alt="portfolio-post" />
-                                <div class="mask"></div>
-                                <a href="http://themeforest.net/user/pixelwars" target="_blank"></a>
-                            </div>
-                            <div class="media-cell-desc">
-                                <h3>Shinny Robot</h3>
-                                <p class="category">an illustration work</p>
-                            </div>
-                        </div>
-                        <!-- portfolio-item - custom url -->
-
-                        <!-- portfolio-item -->
-                        <div class="media-cell coding hentry">
-                            <div class="media-box">
-                                <img src="images/portfolio/16.png" alt="portfolio-post" />
-                                <div class="mask"></div>
-                                <a href="portfolio-item-03.html" class="ajax"></a>
-                            </div>
-                            <div class="media-cell-desc">
-                                <h3>Virus Protection</h3>
-                                <p class="category">an illustration work</p>
-                            </div>
-                        </div>
-                        <!-- portfolio-item -->
-
-                        <!-- portfolio-item -->
-                        <div class="media-cell design hentry">
-                            <div class="media-box">
-                                <img src="images/portfolio/14.png" alt="portfolio-post" />
-                                <div class="mask"></div>
-                                <a href="portfolio-lamp-stack-website.html" class="ajax"></a>
-                            </div>
-                            <div class="media-cell-desc">
-                                <h3>Red Diamond</h3>
-                                <p class="category">an illustration work</p>
-                            </div>
-                        </div>
-                        <!-- portfolio-item -->
-
-                        <!-- portfolio-item -->
-                        <div class="media-cell design hentry">
-                            <div class="media-box">
-                                <img src="images/portfolio/15.png" alt="portfolio-post" />
-                                <div class="mask"></div>
-                                <a href="portfolio-item-02.html" class="ajax"></a>
-                            </div>
-                            <div class="media-cell-desc">
-                                <h3>Sky is The Limit</h3>
-                                <p class="category">an illustration work</p>
-                            </div>
-                        </div>
-                        <!-- portfolio-item -->
-
-                        <!-- portfolio-item -->
-                        <div class="media-cell logo hentry x2">
-                            <div class="media-box">
-                                <img src="images/portfolio/11.jpg" alt="portfolio-post" />
-                                <div class="mask"></div>
-                                <a href="portfolio-item-03.html" class="ajax"></a>
-                            </div>
-                            <div class="media-cell-desc">
-                                <h3>Behind The Eyes</h3>
-                                <p class="category">an illustration work</p>
-                            </div>
-                        </div>
-                        <!-- portfolio-item -->
+                        <!-- LEMP STACK -->
                     </div>
                     <!-- PORTFOLIO -->
                 </div>
@@ -692,8 +568,8 @@
                                 </div>
 
                                 <div class="letter-info">
-                                    <p><i class="icon-at"></i>phsinghka@gmail.com</p>
-                                    <p><i class="icon-phone"></i>+1 (647)-868-6542</p>
+                                    <p><i class="icon-at"></i><a href="mailto:phsinghka@gmail.com">phsinghka@gmail.com</a></p>
+                                    <p><i class="icon-phone"></i><a href="tel:+16478686542">+1 (647)-868-6542</a></p>
                                     <p><i class="icon-location"></i>Toronto, Canada</p>
                                 </div>
                             </div>
@@ -702,35 +578,6 @@
                             <!-- <h2 class="section-title">
                                 <span><i class="icon-paper-plane"></i>DROP ME A LINE</span>
                             </h2> -->
-
-                            <!-- .contact-form -->
-                            <!-- <div class="contact-form">
-                                <form id="contact-form" action="send-mail.php" method="post">
-                                    
-                                    <input type="hidden" name="subject" id="subject"
-                                        value="You have a new message from Piyush Himmatsinghka - DevOps Engineer!" />
-
-                                    <p>
-                                        <label for="name">NAME</label>
-                                        <input type="text" name="name" id="name" class="required" />
-                                    </p>
-
-                                    <p>
-                                        <label for="email">EMAIL</label>
-                                        <input type="text" name="email" id="email" class="required email" />
-                                    </p>
-
-                                    <p>
-                                        <label for="message">MESSAGE</label>
-                                        <textarea name="message" id="message" class="required"></textarea>
-                                    </p>
-
-                                    <p>
-                                        <input type="submit" class="submit button primary" value="SEND" />
-                                    </p>
-                                </form>
-                            </div> -->
-                            <!-- .contact-form -->
                         </div>
                         <!-- column 6/12 -->
 
@@ -746,7 +593,8 @@
                                     <a class="github" href="https://github.com/phsinghka" target="_blank"></a>
                                 </li>
                                 <li>
-                                    <a class="linkedin" href="https://www.linkedin.com/in/phsinghka/" target="_blank"></a>
+                                    <a class="linkedin" href="https://www.linkedin.com/in/phsinghka/"
+                                        target="_blank"></a>
                                 </li>
                                 <li>
                                     <a class="instagram" href="https://www.instagram.com/phsinghka" target="_blank"></a>
@@ -762,12 +610,15 @@
                             </h2>
 
                             <p>
-                                I'd love to connect with you! Whether you have questions, need help with a project, or just want to chat about DevOps and tech, feel free to book a meeting with me. Simply choose a time that works for you, and let's get started!
+                                I'd love to connect with you! Whether you have questions, need help with a project, or
+                                just want to chat about DevOps and tech, feel free to book a meeting with me. Simply
+                                choose a time that works for you, and let's get started!
                             </p>
 
                             <!-- DOWNLOAD BUTTON -->
                             <div class="download-button">
-                                <a href="https://calendly.com/phsinghka/30min" class="button primary" target="_blank">SEE AVAILABLE TIMES</a>
+                                <a href="https://calendly.com/phsinghka/30min" class="button primary"
+                                    target="_blank">SEE AVAILABLE TIMES</a>
                             </div>
 
                             <!-- <h2 class="section-title">
@@ -788,157 +639,7 @@
             <!-- PAGE : CONTACT -->
 
             <!-- PAGE : BLOG -->
-            <section id="blog" class="page">
-                <div class="content">
-                    <h2 class="section-title center">
-                        <span><i class="icon-book-open"></i>LATEST FROM THE BLOG</span>
-                    </h2>
-
-                    <!-- LATEST POSTS -->
-                    <div class="latest-posts media-grid" data-layout="fitRows">
-                        <!-- post -->
-                        <article class="hentry media-cell">
-                            <div class="media-box">
-                                <img src="images/blog/blog-01.png" alt="post-image" />
-                                <div class="mask"></div>
-                                <a href="blog-single.html"></a>
-                            </div>
-
-                            <header class="media-cell-desc">
-                                <span title="2013" class="date"><span class="day">18</span>oct</span>
-                                <h3>
-                                    <a href="blog-single.html">20 Best Practices For Designing Better UIs</a>
-                                </h3>
-                            </header>
-                        </article>
-                        <!-- post -->
-
-                        <!-- post -->
-                        <article class="hentry media-cell">
-                            <div class="media-box">
-                                <img src="images/blog/blog-07.png" alt="post-image" />
-                                <div class="mask"></div>
-                                <a href="blog-single.html"></a>
-                            </div>
-
-                            <header class="media-cell-desc">
-                                <span title="2013" class="date"><span class="day">11</span>oct</span>
-                                <h3>
-                                    <a href="blog-single.html">40 Inspirational Magazine Designs That You Should See</a>
-                                </h3>
-                            </header>
-                        </article>
-                        <!-- post -->
-
-                        <!-- post -->
-                        <article class="hentry media-cell">
-                            <div class="media-box">
-                                <img src="images/blog/blog-03.png" alt="post-image" />
-                                <div class="mask"></div>
-                                <a href="blog-single.html"></a>
-                            </div>
-
-                            <header class="media-cell-desc">
-                                <span title="2013" class="date"><span class="day">27</span>sep</span>
-                                <h3>
-                                    <a href="blog-single.html">Creating a New Typeface For Your Next Project</a>
-                                </h3>
-                            </header>
-                        </article>
-                        <!-- post -->
-
-                        <!-- post -->
-                        <article class="hentry media-cell">
-                            <div class="media-box">
-                                <img src="images/blog/blog-04.png" alt="post-image" />
-                                <div class="mask"></div>
-                                <a href="blog-single.html"></a>
-                            </div>
-
-                            <header class="media-cell-desc">
-                                <span title="2013" class="date"><span class="day">14</span>jun</span>
-                                <h3>
-                                    <a href="blog-single.html">Sketching a Monster Made by Stone From Scratch</a>
-                                </h3>
-                            </header>
-                        </article>
-                        <!-- post -->
-
-                        <!-- post -->
-                        <article class="hentry media-cell">
-                            <div class="media-box">
-                                <img src="images/blog/blog-05.png" alt="post-image" />
-                                <div class="mask"></div>
-                                <a href="blog-single.html"></a>
-                            </div>
-
-                            <header class="media-cell-desc">
-                                <span title="2013" class="date"><span class="day">05</span>jun</span>
-                                <h3>
-                                    <a href="blog-single.html">Designing a Physics Based iOS Game From Scratch</a>
-                                </h3>
-                            </header>
-                        </article>
-                        <!-- post -->
-
-                        <!-- post -->
-                        <article class="hentry media-cell">
-                            <div class="media-box">
-                                <img src="images/blog/blog-06.png" alt="post-image" />
-                                <div class="mask"></div>
-                                <a href="blog-single.html"></a>
-                            </div>
-
-                            <header class="media-cell-desc">
-                                <span title="2013" class="date"><span class="day">03</span>may</span>
-                                <h3>
-                                    <a href="blog-single.html">Get Ready And Pack Your Bag For a Real Trip</a>
-                                </h3>
-                            </header>
-                        </article>
-                        <!-- post -->
-
-                        <!-- post -->
-                        <article class="hentry media-cell">
-                            <div class="media-box">
-                                <img src="images/blog/blog-02.png" alt="post-image" />
-                                <div class="mask"></div>
-                                <a href="blog-single.html"></a>
-                            </div>
-
-                            <header class="media-cell-desc">
-                                <span title="2013" class="date"><span class="day">03</span>may</span>
-                                <h3>
-                                    <a href="blog-single.html">Get Ready And Pack Your Bag For a Real Trip</a>
-                                </h3>
-                            </header>
-                        </article>
-                        <!-- post -->
-
-                        <!-- post -->
-                        <article class="hentry media-cell">
-                            <div class="media-box">
-                                <img src="images/blog/blog-08.png" alt="post-image" />
-                                <div class="mask"></div>
-                                <a href="blog-single.html"></a>
-                            </div>
-
-                            <header class="media-cell-desc">
-                                <span title="2013" class="date"><span class="day">03</span>may</span>
-                                <h3>
-                                    <a href="blog-single.html">Get Ready And Pack Your Bag For a Real Trip</a>
-                                </h3>
-                            </header>
-                        </article>
-                        <!-- post -->
-                    </div>
-                    <!-- LATEST POSTS -->
-
-                    <p class="launch">
-                        <a class="button primary" href="blog.html">SEE ALL POSTS</a>
-                    </p>
-                </div>
-            </section>
+            <!-- CHECK BLOG_BACKUP -->
             <!-- PAGE : BLOG -->
 
             <!-- PAGE : RESUME -->
@@ -949,7 +650,7 @@
                     <!-- row -->
                     <div class="row">
                         <!-- col 6/12 -->
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <!-- timeline -->
                             <div class="timeline">
                                 <h2><i class="fa fa-flask"></i>WORK HISTORY</h2>
@@ -959,32 +660,51 @@
                                     <h4>Full Stack Web Developer</h4>
                                     <h5>CJ Technologies, Canada</h5>
                                     <p>
-                                        At CJ Technologies, I overhauled the website, boosting user engagement by 75%, and designed a user-friendly front-end, increasing active users by 53%. I also improved route planning and streamlined financial processes.
+                                        At CJ Technologies, I overhauled the website, boosting user engagement by 75%,
+                                        and designed a user-friendly front-end, increasing active users by 53%. I also
+                                        improved route planning and streamlined financial processes.
                                     </p>
+                                    <b>Achievements :</b>
+    <ul>
+        <li>Optimized cloud architecture and deployment processes using CI/CD pipelines, which reduced setup time by 25%, enhancing overall system efficiency.</li>
+        <li>Enhanced route planning efficiency by 31% by implementing advanced functions to solve complex scenarios, leading to improved operational effectiveness.</li>
+        <li>Accelerated platform development, by implementing streamlined pipelines, resulting in doubling project completion speed compared to initial deadlines.</li>
+        <li>Pioneered development and implementation of warehouse inventory management and product location system, which decreased order processing time by 27%, leading to more efficient business operations.</li>
+        <li>Revitalized a legacy project by updating the payment system, resulting in a 37% increase in customer satisfaction.</li>
+        <li>Designed a new user-friendly front end in collaboration with UX designers, leading to a 53% increase in monthly active users.</li>
+    </ul>
                                 </div>
-                                
-                                <div class="event">
-                                    <span class="date">2021-2022</span>
-                                    <h4>Programming Tutor</h4>
-                                    <h5>CODE NINJAS, CANADA</h5>
-                                    <p>
-                                        As a Programming Tutor at Code Ninjas, I taught coding fundamentals to young students, fostering their enthusiasm for technology.
-                                    </p>
-                                </div>
-                                
+
                                 <div class="event">
                                     <span class="date">2017-2021</span>
                                     <h4>DevOps Engineer</h4>
                                     <h5>Europa Infotech Pvt Ltd., India</h5>
                                     <p>
-                                        At Europa Infotech, I optimized CI/CD pipelines, managed AWS resources, and led the deployment of full-stack applications across various industries.
+                                        At Europa Infotech, I optimized CI/CD pipelines, managed AWS resources, and led
+                                        the deployment of full-stack applications across various industries.
                                     </p>
+                                    <b>Achievements :</b>
+                                    <ul>
+                                        <li>Spearheaded the establishment and management of CI/CD pipelines using AWS CodePipeline, AWS CodeBuild, and Jenkins, resulting in rapid and reliable application deployments and reducing deployment times by 50%.</li>
+                                        <li>Pioneered the development and maintenance of infrastructure as code (IaaC) using AWS CloudFormation, AWS CDK, and Terraform, ensuring the reliability and repeatability of deployments and decreasing configuration errors by 40%.</li>
+                                        <li>Automated routine tasks and enhanced operational efficiency by leveraging scripting skills in Bash, Python, and PowerShell to create AWS Lambda functions, improving task completion time by 60%.</li>
+                                        <li>Architected infrastructure for SaaS solutions on AWS and established CI/CD pipelines for cloud solutions, demonstrating expertise in AWS services such as EC2, ELB, EBS, VPC, S3, and IAM, which led to a 30% increase in deployment efficiency.</li>
+                                        <li>Engineered build processes using Maven, NodeJS, Python, and Bash to generate deployable artifacts from source code, streamlining the build process and cutting build times by 25%.</li>
+                                    </ul>
                                 </div>
-                                
+
 
                             </div>
                             <!-- timeline -->
 
+                        </div>
+                        <!-- col 6/12 -->
+                    </div>
+                    <!-- row -->
+                    <!-- row -->
+                    <div class="row">
+                        <!-- col 6/12 -->
+                        <div class="col-md-6">
                             <!-- timeline -->
                             <div class="timeline">
                                 <h2><i class="icon-college"></i>EDUCATION HISTORY</h2>
@@ -994,7 +714,7 @@
                                     <h4>George Brown College</h4>
                                     <h5>Canada</h5>
                                     <p>
-                                        PG Certificate in Blockchain Development
+                                        PG Certificate in Blockchain Development | GPA: 3.5/4.0
                                     </p>
                                 </div>
 
@@ -1003,7 +723,7 @@
                                     <h4>Seneca College</h4>
                                     <h5>Canada</h5>
                                     <p>
-                                        PG Certificate in Business Analysis
+                                        PG Certificate in Business Analysis | GPA: 3.8/4.0
                                     </p>
                                 </div>
 
@@ -1012,7 +732,7 @@
                                     <h4>Gujarat Technology University</h4>
                                     <h5>India</h5>
                                     <p>
-                                        Bachelor of Technology in Information Technology
+                                        Bachelor of Technology in Information Technology | GPA: 8.2/10.0
                                     </p>
                                 </div>
                             </div>
@@ -1022,185 +742,41 @@
 
                         <!-- col 6/12 -->
                         <div class="col-md-6">
-                            <h2 class="section-title">
-                                <span><i class="icon-cog-1"></i>CLOUD SKILLS</span>
-                            </h2>
-
-                            <!-- DEV SKILLS -->
-                            <div class="skillset">
-                                <!-- .skill-unit -->
-                                <div class="skill-unit">
-                                    <h4>Amazon Web Services (AWS)</h4>
-                                    <div class="bar" data-percent="60">
-                                        <div class="progress"></div>
-                                    </div>
-                                </div>
-                                <!-- .skill-unit -->
-
-                                <!-- .skill-unit -->
-                                <div class="skill-unit">
-                                    <h4>Google Cloud Platform (GCP)</h4>
-                                    <div class="bar" data-percent="50">
-                                        <div class="progress"></div>
-                                    </div>
-                                </div>
-                                <!-- .skill-unit -->
-
-                                <!-- .skill-unit -->
-                                <div class="skill-unit">
-                                    <h4>Azure</h4>
-                                    <div class="bar" data-percent="55">
-                                        <div class="progress"></div>
-                                    </div>
-                                </div>
-                                <!-- .skill-unit -->
-
-                                <!-- .skill-unit -->
-                            </div>
-                            <!-- DEV SKILLS -->
-
-                            <h2 class="section-title">
-                                <span><i class="icon-cog-1"></i>DEVOPS</span>
-                            </h2>
-
-                            <!-- DEVOPS SKILLS -->
-                            <div class="skillset">
-                                <!-- .skill-unit -->
-                                <div class="skill-unit">
-                                    <h4>Docker</h4>
-                                    <div class="bar" data-percent="90">
-                                        <div class="progress"></div>
-                                    </div>
-                                </div>
-                                <!-- .skill-unit -->
-
-                                <!-- .skill-unit -->
-                                <div class="skill-unit">
-                                    <h4>Jenkins</h4>
-                                    <div class="bar" data-percent="80">
-                                        <div class="progress"></div>
-                                    </div>
-                                </div>
-                                <!-- .skill-unit -->
-
-                                <!-- .skill-unit -->
-                                <div class="skill-unit">
-                                    <h4>Kubernetes</h4>
-                                    <div class="bar" data-percent="65">
-                                        <div class="progress"></div>
-                                    </div>
-                                </div>
-                                <!-- .skill-unit -->
-
-                                <!-- .skill-unit -->
-                            </div>
-                            <!-- DEVOPS SKILLS -->
-
-                            <h2 class="section-title">
-                                <span><i class="icon-brush"></i>DEVELOPMENT SKILLS</span>
-                            </h2>
-
-                            <!-- DESIGN SKILLS -->
-                            <div class="skillset">
-                                <!-- .skill-unit -->
-                                <div class="skill-unit">
-                                    <h4>BASH SCRIPTING</h4>
-                                    <div class="bar" data-percent="90">
-                                        <div class="progress"></div>
-                                    </div>
-                                </div>
-                                <!-- .skill-unit -->
-
-                                <!-- .skill-unit -->
-                                <div class="skill-unit">
-                                    <h4>JAVASCRIPT</h4>
-                                    <div class="bar" data-percent="60">
-                                        <div class="progress"></div>
-                                    </div>
-                                </div>
-                                <!-- .skill-unit -->
-
-                                <!-- .skill-unit -->
-                                <div class="skill-unit">
-                                    <h4>TYPESCRIPT</h4>
-                                    <div class="bar" data-percent="40">
-                                        <div class="progress"></div>
-                                    </div>
-                                </div>
-                                <!-- .skill-unit -->
-                            </div>
-                            <!-- DESIGN SKILLS -->
-
-                            <!-- <h2 class="section-title">
-                                <span><i class="icon-comment"></i>TESTIMONIALS</span>
-                            </h2> -->
-
-                            <!-- testo-group -->
-                            <!-- <div class="testo-group"> -->
-                                <!-- Testimonial -->
-                                <!-- <div class="testo">
-                                    <img src="images/site/testo-01.jpg" alt="someone" />
-                                    <h4>Phillip Austin <span>CEO / Gravity Inc.</span></h4>
-                                    <p>
-                                        He is a great and hardworking guy. I am so proud of i have
-                                        him as my asistant. He helped me so much. Also he is a
-                                        great and hardworking guy. I am so proud of i have him as
-                                        my asistant. He helped me so much.
-                                    </p>
-                                </div> -->
-                                <!-- Testimonial -->
-
-                                <!-- Testimonial -->
-                                <!-- <div class="testo">
-                                    <img src="images/site/testo-02.jpg" alt="someone" />
-
-                                    <h4>Gary Morgan <span>Chemist / Freelancer</span></h4>
-                                    <p>
-                                        He was a great co-worker and a friend. I would't be where
-                                        i am without his support.
-                                    </p>
-                                </div> -->
-                                <!-- Testimonial -->
-
-                                <!-- Testimonial -->
-                                <!-- <div class="testo">
-                                    <img src="images/site/testo-03.jpg" alt="someone" />
-
-                                    <h4>Jason Wilson <span>Lab Geek / Miami Metro</span></h4>
-                                    <p>He is ok.</p>
-                                </div> -->
-                                <!-- Testimonial -->
-                            <!-- </div> -->
-                            <!-- testo-group -->
 
                             <h2 class="section-title">
                                 <span><i class="icon-doc-alt"></i>DOWNLOAD MY CV</span>
                             </h2>
-                            
+
                             <p>
-                                You can download my CV in PDF format. I am currently a Full Stack Web Developer at CJ Technologies, where I design and develop impactful web solutions. I thrive on creating efficient, user-friendly interfaces and solving complex problems.
+                                You can download my CV in PDF format. I am currently a Full Stack Web Developer at CJ
+                                Technologies, where I design and develop impactful web solutions. I thrive on creating
+                                efficient, user-friendly interfaces and solving complex problems.
                             </p>
-                            
+
                             <!-- DOWNLOAD BUTTON -->
                             <div class="download-button">
-                                <a href="/Piyush_DevOps Engineer_Resume.pdf" class="button primary" target="_blank">DOWNLOAD CV</a>
+                                <a href="/Piyush_DevOps Engineer_Resume.pdf" class="button primary"
+                                    target="_blank">DOWNLOAD CV</a>
                             </div>
                             <!-- DOWNLOAD BUTTON -->
-                            
+
                             <h2 class="section-title">
                                 <span><i class="icon-linkedin"></i>VIEW MY LINKEDIN PROFILE</span>
                             </h2>
-                            
+
                             <p>
-                                You can view my LinkedIn profile to learn more about my professional journey. I work at CJ Technologies, where I enhance user experiences and optimize web applications. I am passionate about technology and love what I do.
+                                You can view my LinkedIn profile to learn more about my professional journey. I work at
+                                CJ Technologies, where I enhance user experiences and optimize web applications. I am
+                                passionate about technology and love what I do.
                             </p>
-                            
+
                             <!-- DOWNLOAD BUTTON -->
                             <div class="download-button">
-                                <a href="https://www.linkedin.com/in/phsinghka/" class="button primary"  target="_blank">MY LINKEDIN PROFILE</a>
+                                <a href="https://www.linkedin.com/in/phsinghka/" class="button primary"
+                                    target="_blank">MY LINKEDIN PROFILE</a>
                             </div>
                             <!-- DOWNLOAD BUTTON -->
-                            
+
                         </div>
                         <!-- col 6/12 -->
                     </div>
@@ -1240,7 +816,7 @@
     <script src="js/google-code-prettify/prettify.js"></script>
     <script src="js/twitterFetcher_v10_min.js"></script>
     <script src="js/mediaelement/mediaelement-and-player.min.js"></script>
-    <script src="js/send-mail.js"></script>
+    
     <script src="js/classie.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
     <script src="js/main.js"></script>
