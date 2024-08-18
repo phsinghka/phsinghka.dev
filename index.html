@@ -53,15 +53,21 @@
       <script src="js/respond.min.js"></script>
       <script src="js/selectivizr-min.js"></script>
     <![endif]-->
+
+
 </head>
 
 <body>
+
+
     <!-- CONTAINER -->
     <div class="container" id="container">
         <!-- HEADER -->
         <header class="header">
             <a href="#/"><img src="images/site/avatar.png" alt="avatar" /></a>
-            <a href="#/"><h1 style="color: black;">Piyush Himmatsinghka</h1></a>
+            <a href="#/">
+                <h1 style="color: black;">Piyush Himmatsinghka</h1>
+            </a>
             <p>DevOps Engineer</p>
             <div class="download-button">
                 <a href="/Piyush_DevOps Engineer_Resume.pdf" class="button primary" target="_blank">DOWNLOAD CV</a>
@@ -88,7 +94,7 @@
             <!-- NAV MENU -->
             <ul class="vs-nav">
                 <li><a href="#/about">about me</a></li>
-                <li><a href="#/why-hire-me">why hire me?</a></li>
+                <li><a href="#/why-me">why me?</a></li>
                 <li><a href="#/portfolio">portfolio</a></li>
                 <li><a href="#/contact">contact</a></li>
                 <!-- <li><a href="#/blog">blog</a></li> -->
@@ -217,6 +223,7 @@
 
 
 
+
                     <h2 class="section-title"><span><i class="fa fa-flash"></i>FUN FACT</span></h2>
 
                     <!-- FUN FACT -->
@@ -259,233 +266,311 @@
                     </div>
                     <!-- FUN FACT -->
 
+
                     <h2 class="section-title"><span><i class="fa fa-briefcase"></i>TECH I KNOW</span></h2>
-                    <div class="row">
-                        <!-- AWS -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="Amazon Web Services (AWS)">
-                                    <img src="images/tech-logo/aws.png" alt="AWS" />
-                                </a>
+
+                    <div class="content">
+
+
+                        <!--FILTERS-->
+                        <!-- <ul id="filters" class="filters">
+                            <li class="current"><a href="#" data-filter="*">ALL</a></li>
+                            <li><a href="#" data-filter=".cloud">CLOUD</a></li>
+                            <li><a href="#" data-filter=".containerization">CONTAINERIZATION</a></li>
+                            <li><a href="#" data-filter=".iaac">INFRASTRUCTURE</a></li>
+                            <li><a href="#" data-filter=".cicd">CI/CD TOOLS</a></li>
+                            <li><a href="#" data-filter=".monitoring">MONITORING</a></li>
+                            <li><a href="#" data-filter=".coding">CODING & SCRIPTING</a></li>
+                            <li><a href="#" data-filter=".database">DATABASES</a></li>
+                        </ul> -->
+                        <!--FILTERS-->
+                        <!-- TECH STACK -->
+                        <div class="media-grid row">
+                            <!-- Docker -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 containerization">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.containerization" title="Docker">
+                                        <img src="images/tech-logo/docker.png" alt="Docker" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Kubernetes -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 containerization">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.containerization" title="Kubernetes">
+                                        <img src="images/tech-logo/kubernetes.png" alt="Kubernetes" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Jenkins -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 cicd">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.cicd" title="Jenkins">
+                                        <img src="images/tech-logo/jenkins.png" alt="Jenkins" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Terraform -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 iaac">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.iaac" title="Terraform">
+                                        <img src="images/tech-logo/terraform.png" alt="Terraform" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- GitHub Actions -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 cicd">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.cicd" title="GitHub Actions">
+                                        <img src="images/tech-logo/githubactions.png" alt="GitHub Actions" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- GitOps -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 cicd">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.cicd" title="GitOps">
+                                        <img src="images/tech-logo/gitops.png" alt="GitOps" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Ansible -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 iaac">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.iaac" title="Ansible">
+                                        <img src="images/tech-logo/ansible.png" alt="Ansible" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- AWS -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 cloud">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.cloud" title="Amazon Web Services (AWS)">
+                                        <img src="images/tech-logo/aws.png" alt="AWS" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Azure -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 cloud">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.cloud" title="Microsoft Azure">
+                                        <img src="images/tech-logo/azure.png" alt="Azure" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- GCP -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 cloud">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.cloud" title="Google Cloud Platform (GCP)">
+                                        <img src="images/tech-logo/gcp.png" alt="GCP" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Git -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 cicd">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.cicd" title="Git">
+                                        <img src="images/tech-logo/git.png" alt="Git" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- GitHub -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 cicd">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.cicd" title="GitHub">
+                                        <img src="images/tech-logo/github.png" alt="GitHub" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Prometheus -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 monitoring">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.monitoring" title="Prometheus">
+                                        <img src="images/tech-logo/prometheus.png" alt="Prometheus" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Grafana -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 monitoring">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.monitoring" title="Grafana">
+                                        <img src="images/tech-logo/grafana.png" alt="Grafana" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- NGINX -->
+                            <div class="col-xs-6 col-sm-4 col-md-2">
+                                <div class="client">
+                                    <a href="#/portfolio" title="NGINX">
+                                        <img src="images/tech-logo/nginx.png" alt="NGINX" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Apache -->
+                            <div class="col-xs-6 col-sm-4 col-md-2">
+                                <div class="client">
+                                    <a href="#/portfolio" title="Apache">
+                                        <img src="images/tech-logo/apache.png" alt="Apache" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- OpenShift -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 containerization">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.containerization" title="OpenShift">
+                                        <img src="images/tech-logo/openshift.png" alt="OpenShift" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Linux -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 os">
+                                <div class="client">
+                                    <a href="#/portfolio" title="Linux">
+                                        <img src="images/tech-logo/linux.png" alt="Linux" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Bash -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 coding">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.coding" title="Bash">
+                                        <img src="images/tech-logo/bash.png" alt="Bash" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- YAML -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 coding">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.coding" title="YAML">
+                                        <img src="images/tech-logo/yaml.png" alt="YAML" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Node.js -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 coding">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.coding" title="Node.js">
+                                        <img src="images/tech-logo/nodejs.png" alt="Node.js" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Python -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 coding">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.coding" title="Python">
+                                        <img src="images/tech-logo/python.png" alt="Python" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- DigitalOcean -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 cloud">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.cloud" title="DigitalOcean">
+                                        <img src="images/tech-logo/digitalocean.png" alt="DigitalOcean" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- AWS CodePipeline -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 cicd">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.cicd" title="AWS CodePipeline">
+                                        <img src="images/tech-logo/awscodepipeline.png" alt="AWS CodePipeline" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- CircleCI -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 cicd">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.cicd" title="CircleCI">
+                                        <img src="images/tech-logo/circleci.png" alt="CircleCI" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- MySQL -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 database">
+                                <div class="client">
+                                    <a href="#/portfolio" title="MySQL">
+                                        <img src="images/tech-logo/mysql.png" alt="MySQL" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- MongoDB -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 database">
+                                <div class="client">
+                                    <a href="#/portfolio" title="MongoDB">
+                                        <img src="images/tech-logo/mongodb.png" alt="MongoDB" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Bitbucket -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 cicd">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.cicd" title="Bitbucket">
+                                        <img src="images/tech-logo/bitbucket.png" alt="Bitbucket" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- HTML -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 coding">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.coding" title="HTML">
+                                        <img src="images/tech-logo/html.png" alt="HTML" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- CSS -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 coding">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.coding" title="CSS">
+                                        <img src="images/tech-logo/css.png" alt="CSS" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- JavaScript -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 coding">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.coding" title="JavaScript">
+                                        <img src="images/tech-logo/javascript.png" alt="JavaScript" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- TypeScript -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 coding">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.coding" title="TypeScript">
+                                        <img src="images/tech-logo/typescript.png" alt="TypeScript" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- macOS -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 os">
+                                <div class="client">
+                                    <a href="#/portfolio" title="macOS">
+                                        <img src="images/tech-logo/macos.png" alt="macOS" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Windows -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 os">
+                                <div class="client">
+                                    <a href="#/portfolio" title="Windows">
+                                        <img src="images/tech-logo/windows.png" alt="Windows" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- React -->
+                            <div class="col-xs-6 col-sm-4 col-md-2 coding">
+                                <div class="client">
+                                    <a href="#/portfolio?filter=.coding" title="React">
+                                        <img src="images/tech-logo/react.png" alt="React" />
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <!-- AZURE -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="Microsoft Azure">
-                                    <img src="images/tech-logo/azure.png" alt="Azure" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- GCP -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="Google Cloud Platform (GCP)">
-                                    <img src="images/tech-logo/gcp.png" alt="GCP" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- DOCKER -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="Docker">
-                                    <img src="images/tech-logo/docker.png" alt="Docker" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- KUBERNETES -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="Kubernetes">
-                                    <img src="images/tech-logo/kubernetes.png" alt="Kubernetes" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- JENKINS -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="Jenkins">
-                                    <img src="images/tech-logo/jenkins.png" alt="Jenkins" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- GITOPS -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="GitOps">
-                                    <img src="images/tech-logo/gitops.png" alt="GitOps" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- GITHUB ACTIONS -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="GitHub Actions">
-                                    <img src="images/tech-logo/githubactions.png" alt="GitHub Actions" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- ANSIBLE -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="Ansible">
-                                    <img src="images/tech-logo/ansible.png" alt="Ansible" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- TERRAFORM -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="Terraform">
-                                    <img src="images/tech-logo/terraform.png" alt="Terraform" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- NGINX -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="NGINX">
-                                    <img src="images/tech-logo/nginx.png" alt="NGINX" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- APACHE -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="APACHE">
-                                    <img src="images/tech-logo/apache.png" alt="APACHE" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- GIT -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="Git">
-                                    <img src="images/tech-logo/git.png" alt="Git" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- GITHUB -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="GitHub">
-                                    <img src="images/tech-logo/github.png" alt="GitHub" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- BITBUCKET -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="Bitbucket">
-                                    <img src="images/tech-logo/bitbucket.png" alt="Bitbucket" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- BASH -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="Bash">
-                                    <img src="images/tech-logo/bash.png" alt="Bash" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- JAVASCRIPT -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="JavaScript">
-                                    <img src="images/tech-logo/javascript.png" alt="JavaScript" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- TYPESCRIPT -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="TypeScript">
-                                    <img src="images/tech-logo/typescript.png" alt="TypeScript" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- NODEJS -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="Node.js">
-                                    <img src="images/tech-logo/nodejs.png" alt="Node.js" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- PYTHON -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="Python">
-                                    <img src="images/tech-logo/python.png" alt="Python" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- LINUX -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="Linux">
-                                    <img src="images/tech-logo/linux.png" alt="Linux" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- MACOS -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="macOS">
-                                    <img src="images/tech-logo/macos.png" alt="macOS" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- WINDOWS -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="Windows">
-                                    <img src="images/tech-logo/windows.png" alt="Windows" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- MYSQL -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="MySQL">
-                                    <img src="images/tech-logo/mysql.png" alt="MySQL" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- MONGODB -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="MongoDB">
-                                    <img src="images/tech-logo/mongodb.png" alt="MongoDB" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- HTML -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="HTML">
-                                    <img src="images/tech-logo/html.png" alt="HTML" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- CSS -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="CSS">
-                                    <img src="images/tech-logo/css.png" alt="CSS" />
-                                </a>
-                            </div>
-                        </div>
-                        <!-- REACT -->
-                        <div class="col-xs-6 col-sm-4 col-md-2">
-                            <div class="client">
-                                <a href="#" title="React">
-                                    <img src="images/tech-logo/react.png" alt="React" />
-                                </a>
-                            </div>
-                        </div>
+                        
+                        <!-- TECH STACK -->
                     </div>
+
 
 
 
@@ -493,8 +578,8 @@
             </section>
             <!-- PAGE : ABOUT -->
 
-            <!-- PAGE : WHY HIRE ME -->
-            <section id="why-hire-me" class="page">
+            <!-- PAGE : WHY ME -->
+            <section id="why-me" class="page">
                 <div class="content">
                     <!-- row -->
                     <div class="row">
@@ -503,22 +588,21 @@
                             <h2 class="section-title">
                                 <span><i class="icon-address-book"></i>SEE HOW I CAN ADD VALUE</span>
                             </h2>
-                            
+
                             <p>
-                                <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 5px;">
-                                    <iframe 
-                                      src="https://www.youtube.com/embed/M79qEzbBwPE?si=wFiv4wwuz6cSZ0r1&modestbranding=1&rel=0&vq=hd1080" 
-                                      title="YouTube video player" 
-                                      frameborder="0" 
-                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                      referrerpolicy="strict-origin-when-cross-origin" 
-                                      allowfullscreen 
-                                      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 5px;">
-                                    </iframe>
-                                  </div>
-                                  
-                                  
-                                  
+                            <div
+                                style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 5px;">
+                                <iframe
+                                    src="https://www.youtube.com/embed/M79qEzbBwPE?si=wFiv4wwuz6cSZ0r1&modestbranding=1&rel=0&vq=hd1080"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 5px;">
+                                </iframe>
+                            </div>
+
+
+
                             </p>
                         </div>
                         <!-- column 6/12 -->
@@ -552,7 +636,9 @@
                             </h2>
 
                             <p>
-                                Feel free to pick a time that suits you best for a quick 30-minute call via Meet or Zoom. If you can't find a suitable time, please message me on LinkedIn, and I will schedule a meeting for you. Looking forward to a great conversation!
+                                Feel free to pick a time that suits you best for a quick 30-minute call via Meet or
+                                Zoom. If you can't find a suitable time, please message me on LinkedIn, and I will
+                                schedule a meeting for you. Looking forward to a great conversation!
                             </p>
 
                             <!-- DOWNLOAD BUTTON -->
@@ -576,7 +662,7 @@
                     <!-- row -->
                 </div>
             </section>
-            <!-- PAGE : WHY HIRE ME -->
+            <!-- PAGE : WHY ME -->
 
             <!-- PAGE : PORTFOLIO -->
             <section id="portfolio" class="portfolio page">
@@ -586,19 +672,22 @@
                     </h2>
 
                     <!--FILTERS-->
-                    <!-- <ul id="filters" class="filters">
+                    <ul id="filters" class="filters">
                         <li class="current"><a href="#" data-filter="*">ALL</a></li>
-                        <li><a href="#" data-filter=".design">CLOUD</a></li>
-                        <li><a href="#" data-filter=".coding">CI/CD PIPELINES</a></li>
-                        <li><a href="#" data-filter=".logo">DOCKER</a></li>
-                        <li><a href="#" data-filter=".logo">KUBERNETES</a></li>
-                    </ul> -->
+                        <li><a href="#/portfolio?filter=.cloud" data-filter=".cloud">CLOUD</a></li>
+                        <li><a href="#/portfolio?filter=.containerization"
+                                data-filter=".containerization">CONTAINERIZATION</a></li>
+                        <li><a href="#/portfolio?filter=.iaac" data-filter=".iaac">INFRASTRUCTURE</a></li>
+                        <li><a href="#/portfolio?filter=.cicd" data-filter=".cicd">CI/CD PIPELINES</a></li>
+                        <li><a href="#/portfolio?filter=.monitoring" data-filter=".monitoring">MONITORING</a></li>
+                        <li><a href="#/portfolio?filter=.coding" data-filter=".coding">CODING & SCRIPTING</a></li>
+                    </ul>
                     <!--FILTERS-->
 
                     <!-- PORTFOLIO -->
                     <div class="portfolio-items media-grid" data-layout="masonry">
                         <!-- MERN STACK -->
-                        <div class="media-cell design hentry">
+                        <div class="media-cell cloud coding hentry">
                             <div class="media-box">
                                 <img src="images/portfolio/mern-stack-web-app.png" alt="portfolio-post" />
                                 <div class="mask"></div>
@@ -611,8 +700,9 @@
                             </div>
                         </div>
                         <!-- MERN STACK -->
+
                         <!-- LAMP STACK -->
-                        <div class="media-cell design hentry">
+                        <div class="media-cell  cloud coding hentry">
                             <div class="media-box">
                                 <img src="images/portfolio/lamp-stack-website/01.png" alt="portfolio-post" />
                                 <div class="mask"></div>
@@ -627,7 +717,7 @@
                         <!-- LAMP STACK -->
 
                         <!-- LEMP STACK -->
-                        <div class="media-cell coding hentry">
+                        <div class="media-cell  cloud coding hentry">
                             <div class="media-box">
                                 <img src="images/portfolio/02.png" alt="portfolio-post" />
                                 <div class="mask"></div>
@@ -667,7 +757,8 @@
                                 </div>
 
                                 <div class="letter-info">
-                                    <p><i class="icon-at"></i><a href="mailto:phsinghka@gmail.com">phsinghka@gmail.com</a></p>
+                                    <p><i class="icon-at"></i><a
+                                            href="mailto:phsinghka@gmail.com">phsinghka@gmail.com</a></p>
                                     <p><i class="icon-phone"></i><a href="tel:+16478686542">+1 (647)-868-6542</a></p>
                                     <p><i class="icon-location"></i>Toronto, Canada</p>
                                 </div>
@@ -755,29 +846,41 @@
                                 <h2><i class="fa fa-flask"></i>WORK HISTORY</h2>
 
                                 <div class="event current">
-                                    <span class="date">CURRENT</span>
+                                    <span class="date">2023-2024</span>
                                     <h4>Full Stack Web Developer</h4>
                                     <h5>CJ Technologies, Canada</h5>
                                     <p>
-                                        At CJ Technologies, I overhauled the website, boosting user engagement by 75%, and designed a user-friendly front-end, increasing active users by 53%. I also improved route planning and streamlined financial processes.
+                                        At CJ Technologies, I overhauled the website, boosting user engagement by 75%,
+                                        and designed a user-friendly front-end, increasing active users by 53%. I also
+                                        improved route planning and streamlined financial processes.
                                     </p>
                                     <b>Achievements :</b>
                                     <ul style="margin-bottom: 0px;">
-                                        <li>Optimized cloud architecture and deployment processes using CI/CD pipelines, reducing setup time by 25%.</li>
-                                        <li>Enhanced route planning efficiency by 31%, improving operational effectiveness.</li>
-                                        
+                                        <li>Optimized cloud architecture and deployment processes using CI/CD pipelines,
+                                            reducing setup time by 25%.</li>
+                                        <li>Enhanced route planning efficiency by 31%, improving operational
+                                            effectiveness.</li>
+
                                     </ul>
-                                    <a href="#/resume" onclick="document.getElementById('more-details-cj').style.display='block'; this.style.display='none'">Read more</a>
+                                    <a href="#/resume"
+                                        onclick="document.getElementById('more-details-cj').style.display='block'; this.style.display='none'">Read
+                                        more</a>
                                     <div id="more-details-cj" style="display:none;">
                                         <ul>
-                                           <li>Accelerated platform development, by implementing streamlined pipelines, resulting in doubling project completion speed compared to initial deadlines.</li>
-                                            <li>Pioneered development and implementation of warehouse inventory management and product location system, which decreased order processing time by 27%, leading to more efficient business operations.</li>
-                                            <li>Revitalized a legacy project by updating the payment system, resulting in a 37% increase in customer satisfaction.</li>
-                                            <li>Designed a new user-friendly front end in collaboration with UX designers, leading to a 53% increase in monthly active users.</li>
+                                            <li>Accelerated platform development, by implementing streamlined pipelines,
+                                                resulting in doubling project completion speed compared to initial
+                                                deadlines.</li>
+                                            <li>Pioneered development and implementation of warehouse inventory
+                                                management and product location system, which decreased order processing
+                                                time by 27%, leading to more efficient business operations.</li>
+                                            <li>Revitalized a legacy project by updating the payment system, resulting
+                                                in a 37% increase in customer satisfaction.</li>
+                                            <li>Designed a new user-friendly front end in collaboration with UX
+                                                designers, leading to a 53% increase in monthly active users.</li>
                                         </ul>
                                     </div>
                                 </div>
-                                
+
 
                                 <div class="event">
                                     <span class="date">2017-2021</span>
@@ -790,16 +893,30 @@
                                     <b>Achievements :</b>
 
                                     <ul style="margin-bottom: 0px;">
-                                        <li>Spearheaded the establishment and management of CI/CD pipelines using AWS CodePipeline, AWS CodeBuild, and Jenkins, resulting in rapid and reliable application deployments and reducing deployment times by 50%.</li>
+                                        <li>Spearheaded the establishment and management of CI/CD pipelines using AWS
+                                            CodePipeline, AWS CodeBuild, and Jenkins, resulting in rapid and reliable
+                                            application deployments and reducing deployment times by 50%.</li>
                                     </ul>
-                                    <a href="#/resume" onclick="document.getElementById('more-details-ei').style.display='block'; this.style.display='none'">Read more</a>
+                                    <a href="#/resume"
+                                        onclick="document.getElementById('more-details-ei').style.display='block'; this.style.display='none'">Read
+                                        more</a>
                                     <div id="more-details-ei" style="display:none;">
                                         <ul>
-                                        <li>Pioneered the development and maintenance of infrastructure as code (IaaC) using AWS CloudFormation, AWS CDK, and Terraform, ensuring the reliability and repeatability of deployments and decreasing configuration errors by 40%.</li>
+                                            <li>Pioneered the development and maintenance of infrastructure as code
+                                                (IaaC) using AWS CloudFormation, AWS CDK, and Terraform, ensuring the
+                                                reliability and repeatability of deployments and decreasing
+                                                configuration errors by 40%.</li>
 
-                                        <li>Automated routine tasks and enhanced operational efficiency by leveraging scripting skills in Bash, Python, and PowerShell to create AWS Lambda functions, improving task completion time by 60%.</li>
-                                        <li>Architected infrastructure for SaaS solutions on AWS and established CI/CD pipelines for cloud solutions, demonstrating expertise in AWS services such as EC2, ELB, EBS, VPC, S3, and IAM, which led to a 30% increase in deployment efficiency.</li>
-                                        <li>Engineered build processes using Maven, NodeJS, Python, and Bash to generate deployable artifacts from source code, streamlining the build process and cutting build times by 25%.</li>
+                                            <li>Automated routine tasks and enhanced operational efficiency by
+                                                leveraging scripting skills in Bash, Python, and PowerShell to create
+                                                AWS Lambda functions, improving task completion time by 60%.</li>
+                                            <li>Architected infrastructure for SaaS solutions on AWS and established
+                                                CI/CD pipelines for cloud solutions, demonstrating expertise in AWS
+                                                services such as EC2, ELB, EBS, VPC, S3, and IAM, which led to a 30%
+                                                increase in deployment efficiency.</li>
+                                            <li>Engineered build processes using Maven, NodeJS, Python, and Bash to
+                                                generate deployable artifacts from source code, streamlining the build
+                                                process and cutting build times by 25%.</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -859,7 +976,8 @@
                             </h2>
 
                             <p>
-                                You can download my CV. I design and develop impactful cloud solutions. I thrive on creating
+                                You can download my CV. I design and develop impactful cloud solutions. I thrive on
+                                creating
                                 efficient pipelines and solving complex problems.
                             </p>
 
@@ -925,10 +1043,54 @@
     <script src="js/google-code-prettify/prettify.js"></script>
     <script src="js/twitterFetcher_v10_min.js"></script>
     <script src="js/mediaelement/mediaelement-and-player.min.js"></script>
-    
+
     <script src="js/classie.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        function getHashParam(param) {
+            const hash = window.location.hash;
+            const params = new URLSearchParams(hash.split('?')[1]);
+            return params.get(param);
+        }
+
+        function applyFilter() {
+            const filter = getHashParam('filter');
+            if (filter) {
+                const filterLink = document.querySelector(`a[data-filter="${filter}"]`);
+                if (filterLink) {
+                    // Trigger the filter click event
+                    filterLink.click();
+                } else {
+                    console.warn(`Filter link for "${filter}" not found.`);
+                }
+            } else {
+                console.warn("No filter parameter found in the URL.");
+            }
+        }
+
+        // Apply filter on initial load
+        document.addEventListener('DOMContentLoaded', function() {
+            applyFilter();
+            // Debugging: Log the hash and filter
+            console.log('Initial hash:', window.location.hash);
+        });
+
+        // Apply filter on hash change
+        window.addEventListener('hashchange', function() {
+            console.log('Hash changed:', window.location.hash);
+            applyFilter();
+        });
+
+        // Example of adding a passive event listener
+        function handleWheelEvent(event) {
+            // Your wheel event logic here
+        }
+
+        document.addEventListener('wheel', handleWheelEvent, { passive: true });
+    </script>
+
 </body>
 
 </html>
