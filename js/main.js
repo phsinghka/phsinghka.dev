@@ -1,8 +1,7 @@
 /*
 	Name: Piyush Himmatsinghka - DevOps Engineer
-	Description: Responsive HTML5 vCard Template
 	Version: 1.2.2
-	Author: pixelwars
+	Author: Piyush Himmatsinghka
 */
 
 
@@ -119,6 +118,7 @@ var $container, $blog_container;
 			
 			// ------------------------------
 			// LAYOUT DETECT
+
 			// var pagesCount = $('.wrapper > section').length;
 			// var isIE11 = !!navigator.userAgent.match(/Trident\/7\./); 
 			// classicLayout = $('html').attr('data-classic-layout') === 'true';

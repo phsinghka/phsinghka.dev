@@ -1,0 +1,14 @@
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Block crawling of the backup directories and any sensitive files
+Disallow: /backup/
+Disallow: /Jenkinsfile
+Disallow: /.DS_Store
+
+# Block access to the 404 page (optional, as it's not usually necessary for SEO)
+Disallow: /404.html
+
+# Specify the location of the sitemap
+Sitemap: https://www.phsinghka.dev/sitemap.xml
