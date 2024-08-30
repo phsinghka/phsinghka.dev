@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js single-page-layout" data-classic-layout="false" data-mobile-only-classic-layout="true"
+    data-inAnimation="fadeInUp" data-outAnimation="fadeOutDownBig">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description"
+        content="Experienced DevOps Engineer with expertise in CI/CD pipelines, cloud infrastructure (AWS, Azure), and automation using Jenkins, Terraform, and Docker.">
+    <meta name="keywords"
+        content="DevOps Engineer, Cloud Engineer, CI/CD, AWS, Azure, Jenkins, Terraform, Docker, Kubernetes, Automation">
+    <meta name="author" content="Piyush Himmatsinghka">
+
+    <title>LEMP Stack Deployment on Ubuntu - Piyush Himmatsinghka</title>
+
+    <!-- FAV and TOUCH ICONS -->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon" href="images/ico/apple-touch-icon.png" />
+
+    <script src="js/modernizr.custom.js"></script>
+
+    <!-- FONTS -->
+    <link
+        href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic'
+        rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" media="print" href="css/print.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="js/nprogress/nprogress.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts/fontello/css/fontello.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css">
+    <link rel="stylesheet" type="text/css" href="js/google-code-prettify/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/uniform.default.css">
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+    <link rel="stylesheet" type="text/css" href="js/mediaelement/mediaelementplayer.css">
+    <link rel="stylesheet" type="text/css" href="css/tooltipster.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!--[if lte IE 9]>
+            <script src="js/html5shiv.js"></script>
+            <script src="js/respond.min.js"></script>
+            <script src="js/selectivizr-min.js"></script>
+        <![endif]-->
+
+    <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "CreativeWork",
+              "name": "LEMP Stack Deployment on Ubuntu",
+              "description": "This project demonstrates the deployment of a LEMP (Linux, Nginx, MySQL, PHP) stack on an Ubuntu server.",
+              "url": "https://www.phsinghka.dev/portfolio-lemp-stack.html",
+              "image": "https://www.phsinghka.dev/images/lemp-stack-deployment.png",
+              "creator": {
+                "@type": "Person",
+                "name": "Piyush Himmatsinghka",
+                "url": "https://www.phsinghka.dev/index.html"
+              },
+              "datePublished": "2024-08-18",
+              "keywords": ["LEMP Stack", "Nginx", "MySQL", "PHP", "Ansible", "Automation", "DevOps"],
+              "inLanguage": "en",
+              "about": {
+                "@type": "Thing",
+                "name": "DevOps Engineering"
+              }
+            }
+            </script>
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+    <!-- CONTAINER -->
+    <div class="container" id="container">
+
+
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <img src="images/site/avatar.png" alt="avatar">
+            <h1>Piyush Himmatsinghka</h1>
+            <p>DevOps Engineer</p>
+
+            <!-- NAV MENU -->
+            <ul class="vs-nav">
+                <li><a href="index.html#/portfolio"><i title="back to portfolio" class="icon-left-open tooltip"
+                            data-tooltip-pos="left"></i></a></li>
+                <li><a href="index.html"><i title="go to home" class="icon-home-1 tooltip"
+                            data-tooltip-pos="right"></i></a></li>
+
+            </ul>
+            <!-- NAV MENU -->
+
+            <!-- SEARCH -->
+            <div class="header-search">
+                <form role="search" method="get" id="search-form" action="#">
+                    <input type="text" value="" name="s" id="search" placeholder="ENTER KEYWORD">
+                    <input type="submit" id="search-submit" title="Search" value="→">
+                </form>
+            </div>
+            <!-- SEARCH -->
+
+        </header>
+        <!-- HEADER -->
+
+
+
+
+
+        <!-- WRAPPER -->
+        <div class="wrapper"> <!-- .portfolio-single -->
+            <div class="portfolio-single">
+
+
+
+                <!-- .row -->
+                <div class="row">
+
+                    <!-- TITLE - column 8/12 -->
+                    <div class="col-md-8 portfolio-field portfolio-title">
+                        <h2>LEMP Stack Deployment on Ubuntu</h2>
+                    </div>
+                    <!-- TITLE - column 8/12 -->
+
+
+                    <!-- PORTFOLIO-NAV - column 4/12 -->
+                    <div class="col-md-4 portfolio-field portfolio-nav">
+                        <a class="icon button prev ajax" href="lamp-stack-deployment.html"></a>
+                        <a class="icon button next ajax" href="mern-stack-deployment.html"></a>
+                        <a class="button back" href="#/portfolio"></a>
+                    </div>
+                    <!-- PORTFOLIO-NAV - column 4/12 -->
+
+                </div>
+                <!-- .row -->
+
+
+
+                <!-- .row -->
+                <div class="row">
+
+                    <!-- PORTFOLIO-IMAGES - column 8/12 -->
+                    <!-- <div class="col-md-5 portfolio-field">
+                            <img src="images/portfolio/lamp-stack-website/01.png" alt="project">
+                        </div> -->
+                    <!-- PORTFOLIO-IMAGES - column 8/12 -->
+
+
+                    <!-- PORTFOLIO SIDEBAR - column 4/12 -->
+                    <div class="col-md-12 portfolio-field">
+
+                        <h3>Overview</h3>
+                        <p>This project demonstrates the deployment of a LEMP (Linux, Nginx, MySQL, PHP) stack on an
+                            Ubuntu server. The provided setup-script.sh script automates the installation and
+                            configuration of Nginx, MySQL, and PHP. Additionally, it sets up a basic PHP application to
+                            test the stack's functionality.</p>
+
+                        <h3>Script Breakdown</h3>
+                        <p>The setup-script.sh script performs the following actions:</p>
+                        <ul>
+                            <li><strong>System Update: </strong>Updates and upgrades the system packages.</li>
+                            <li><strong>Nginx Installation: </strong>Installs Nginx and starts the service. Configures
+                                Nginx to serve a PHP application.</li>
+                            <li><strong>MySQL Installation: </strong>Installs MySQL server and runs a secure
+                                installation process. Sets up a database and user for the PHP application.</li>
+                            <li><strong>PHP Installation: </strong>Installs PHP and necessary extensions.</li>
+                            <li><strong>Nginx Configuration: </strong>Updates and upgrades the system packages.</li>
+                            <li><strong>PHP Test Files: </strong>Creates a basic index.php file to display PHP
+                                configuration information and a test_db.php file to test MySQL connectivity.</li>
+                            <li><strong>Database Setup: </strong>Creates a MySQL database and user with the appropriate
+                                privileges.</li>
+
+                        </ul>
+
+
+
+
+                        <h3>Technology</h3>
+                        <ul class="tags">
+                            <li><a>Linux (Ubuntu)</a></li>
+                            <li><a>NGINX</a></li>
+                            <li><a>MySQL</a></li>
+                            <li><a>PHP</a></li>
+                            <li><a>AWS Cloud</a></li>
+                        </ul>
+
+                        <div class="launch">
+                            <a target=”_blank” href="https://github.com/phsinghka/lemp-stack-deployment"
+                                class="button primary">LAUNCH PROJECT ON GITHUB</a>
+                        </div>
+
+                    </div>
+                    <!-- PORTFOLIO SIDEBAR - column 4/12 -->
+
+                </div>
+                <!-- .row -->
+
+
+                <!-- .row -->
+                <div class="row">
+
+                    <!-- PORTFOLIO-NAV BOTTOM - column 12/12 -->
+                    <div class="col-md-12 portfolio-field portfolio-nav bottom">
+                        <a class="icon button prev ajax" href="lamp-stack-deployment.html"></a>
+                        <a class="icon button next ajax" href="mern-stack-deployment.html"></a>
+                        <a class="button back" href="#/portfolio"></a>
+                    </div>
+                    <!-- PORTFOLIO-NAV BOTTOM - column 12/12 -->
+
+                </div>
+                <!-- .row -->
+
+
+
+            </div>
+            <!-- .portfolio-single -->
+
+
+
+        </div>
+        <!-- WRAPPER -->
+
+
+    </div>
+    <!-- CONTAINER -->
+
+
+
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.address-1.5.min.js"></script>
+    <script src="js/triple.layout.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/nprogress/nprogress.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/jquery.imagesloaded.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.uniform.min.js"></script>
+    <script src="js/jquery.fancybox-1.3.4.pack.js"></script>
+    <script src="js/jquery.tooltipster.min.js"></script>
+    <script src="js/google-code-prettify/prettify.js"></script>
+    <script src="js/twitterFetcher_v10_min.js"></script>
+    <script src="js/mediaelement/mediaelement-and-player.min.js"></script>
+
+    <script src="js/classie.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
