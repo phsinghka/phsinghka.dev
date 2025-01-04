@@ -827,7 +827,15 @@ h2 i[class^="icon-"], h2 i[class*=" icon-"], h2 i.fa {
 .client img { 
 	max-width:90%; max-height: 64px; opacity: .4; 
 	}
-.client a:hover img { 
+	.client h6 { 
+		opacity: .4; 
+		display:none;
+		}
+.client:hover img { 
+	opacity: 1; 
+	scale: 1.1;
+	}
+.client:hover h6 { 
 	opacity: 1; 
 	scale: 1.1;
 	}
@@ -2850,3 +2858,35 @@ a.more-link:hover,
 :-webkit-full-screen-ancestor:not(iframe) *:not(video) {
     animation: none; -webkit-animation: none;
     }
+
+
+/* Button styles */
+.filter-btn {
+	margin-top: 20px;
+    color: #b8c7ca;
+    font-size: 11px;
+    letter-spacing: .1em;
+    padding: 7px 12px;
+    border: 1px solid #DDE4E6;
+    border-radius: 4px;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    color: #345;
+    border-color: #345;
+    background: #fff;
+}
+
+.filter-btn.current {
+    color: #fff;
+    background: #345;
+    border-color: transparent;
+}
+
+.filter-btn.current:hover {
+    background: #345;
+    color: #fff;
+    border-color: transparent;
+}

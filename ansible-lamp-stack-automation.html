@@ -13,7 +13,7 @@
         content="DevOps Engineer, Cloud Engineer, CI/CD, AWS, Azure, Jenkins, Terraform, Docker, Kubernetes, Automation">
     <meta name="author" content="Piyush Himmatsinghka">
 
-    <title>MERN Dockerized Application - Piyush Himmatsinghka</title>
+    <title>Ansible LAMP Stack Deployment - Piyush Himmatsinghka</title>
 
     <!-- FAV and TOUCH ICONS -->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
@@ -55,21 +55,21 @@
             {
               "@context": "https://schema.org",
               "@type": "CreativeWork",
-              "name": "MERN Dockerized Application",
-              "description": "A MERN Dockerized Application project utilizing MongoDB, Express.js, React, and Node.js to create a modern web application.",
-              "url": "https://www.phsinghka.dev/portfolio-mern-stack.html",
-              "image": "https://www.phsinghka.dev/images/mern-stack-development.png",
+              "name": "Ansible LAMP Stack Deployment",
+              "description": "A Ansible LAMP Stack Deployment project utilizing MongoDB, Express.js, React, and Node.js to create a modern web application.",
+              "url": "https://www.phsinghka.dev/ansible-lamp-stack-automation.html",
+              "image": "https://www.phsinghka.dev/images/ansible-lamp-stack-automation.png",
               "creator": {
                 "@type": "Person",
                 "name": "Piyush Himmatsinghka",
                 "url": "https://www.phsinghka.dev/index.html"
               },
               "datePublished": "2024-08-18",
-              "keywords": ["MERN Stack", "MongoDB", "Express.js", "React", "Node.js", "MERN Dockerized Application"],
+              "keywords": ["MERN Stack", "MongoDB", "Express.js", "React", "Node.js", "Ansible LAMP Stack Deployment"],
               "inLanguage": "en",
               "about": {
                 "@type": "Thing",
-                "name": "MERN Dockerized Application"
+                "name": "Ansible LAMP Stack Deployment"
               }
             }
             </script>
@@ -92,7 +92,7 @@
         <!-- HEADER -->
         <header class="header">
 
-            <img src="images/site/avatar.png" alt="avatar">
+            <img src="images/site/avatar.jpg" alt="avatar">
             <h1>Piyush Himmatsinghka</h1>
             <p>DevOps Engineer</p>
 
@@ -133,7 +133,7 @@
 
                     <!-- TITLE - column 8/12 -->
                     <div class="col-md-8 portfolio-field portfolio-title">
-                        <h2>MERN Dockerized Application</h2>
+                        <h2>Ansible LAMP Stack Deployment</h2>
                     </div>
                     <!-- TITLE - column 8/12 -->
 
@@ -165,69 +165,39 @@
                     <div class="col-md-12 portfolio-field">
 
                         <h2>1. Overview</h2>
-                        <p>This project is a full-stack MERN (MongoDB, Express, React, Node.js) application. The project
-                            uses Docker and Docker Compose to run the entire stack in separate containers: one for the
-                            frontend (React), one for the backend (Node.js and Express), and one for the database
-                            (MongoDB).</p>
+                        <p>This project demonstrates the use of Ansible to automate the deployment of a LAMP (Linux,
+                            Apache, MySQL, PHP) stack across multiple servers. The automation is done using Ansible
+                            Playbooks with roles for installing and configuring Apache, PHP, MySQL, security hardening,
+                            and firewall setup.
+                        </p>
 
-                        <h2>2. Project Highlights</h2>
+                        <h2>2. Key Learning Outcomes:</h2>
                         <ul>
-                            <li>MongoDB: Database to store records.</li>
-                            <li>Express: Web server to serve the backend.</li>
-                            <li>React: Frontend built to interact with the backend and display the data.</li>
-                            <li>Node.js: Runtime for executing JavaScript on the server side.</li>
-                            <li>Docker: Containerize the entire application.</li>
-                            <li>Docker Compose: To orchestrate and run the multi-container application.</li>
-                            <li>Nginx: Web server for serving the React frontend.</li>
+                            <li>Ansible inventory management for multi-server environments.</li>
+                            <li>Writing and structuring Ansible playbooks using roles.</li>
+                            <li>Deploying, configuring, and managing services like Apache, MySQL, and PHP.</li>
+                            <li>Enforcing security using Ansible for firewall and SSH hardening.</li>
+                            <li>Demonstrating the power of Ansible in automating infrastructure setup.</li>
+
                         </ul>
 
-                        <h2>3. Project Structure</h2>
-                        <pre><code class="bash">
-    .
-    ├── client                  # Frontend React application
-    ├── server                  # Backend Node.js and Express application
-    ├── mongo-init.js           # MongoDB initialization script
-    └── docker-compose.yml      # Docker Compose configuration
-    </code></pre>
-                        <h2>4. Docker Compose Overview</h2>
-                        <p>The application consists of three services:</p>
+
+                        <h2>3. Project Highlights:</h2>
                         <ul>
-                            <li><strong>server</strong>: The backend Express application running on Node.js.</li>
-                            <li><strong>client</strong>: The frontend React application served by Nginx.</li>
-                            <li><strong>mongo</strong>: The MongoDB database to store application data.</li>
-                        </ul>
 
-                        <h2>5. Environment Variables</h2>
-                        <ul>
-                            <li><strong>ATLAS_URI</strong>: MongoDB connection string used in the backend.</li>
-                            <li><strong>PORT</strong>: The port the backend will run on.</li>
-                            <li><strong>REACT_APP_YOUR_HOSTNAME</strong>: The backend API URL used in the frontend.</li>
-                        </ul>
-
-                        <h3>Technology</h3>
-                        <ul class="tags">
-                            <li><a>Mongo DB</a></li>
-                            <li><a>ExpressJS</a></li>
-                            <li><a>NodeJS</a></li>
-                            <li><a>ReactJS</a></li>
-                            <li><a>PM2</a></li>
-                            <li><a>AWS Cloud</a></li>
-                            <li><a>Docker</a></li>
-                            <li><a>Docker Compose</a></li>
-                            <li><a>Nginx</a></li>
+                            <li>Automated deployment of LAMP stack across multiple servers.</li>
+                            <li>Security-focused playbooks for SSH and firewall configuration.</li>
+                            <li>SSL/TLS certificate automation using Let’s Encrypt.</li>
+                            <li>Role-based playbooks with idempotent design.</li>
                         </ul>
 
 
-                        <h3>Access the application:</h3>
-                        <ul>
-                            <li>The frontend will be available at <code>http://localhost:80</code>.</li>
-                            <li>The backend API will be available at <code>http://localhost:5000</code>.</li>
-                        </ul>
+
 
 
 
                         <div class="launch">
-                            <a target=”_blank” href="https://github.com/phsinghka/docker-compose-multi-container"
+                            <a target=”_blank” href="https://github.com/phsinghka/ansible-lamp-stack-automation"
                                 class="button primary">LAUNCH ON GITHUB</a>
                         </div>
 
